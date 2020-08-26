@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="ASP.NET.Admin.AdminMasterPage" %>
+<link href="./Css/style.css" rel="stylesheet" type="text/css"/>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div>
+                    <!-- TOP -->
+
+                    <div id="top">
+                        <div id="search">
+                                <input type="text"  name="search" placeholder="Nhập sản phẩm cần tìm..."/>
+                                <!--src='/shopdt/img/search.jpg'/>-->
+                                <!--<input type="submit" name="submit" value="SEARCH"/>-->
+                                <button type="submit" name="submit" >
+                                    Submit
+                                </button>
+                        </div>
+                        <div id="account">
+                            <p>Xin chào:Admin</p>
+                        </div>
+                    </div>
+
+                    <!-- Main -->
+                    <div class="main">
+
+                            <!-- Left -->
+                            <div class="left">
+                                <ul class="ulmain">
+                                    <li><a href="#">TOUR</a>
+                                        <ul>
+                                        <li><a href="Tour.aspx">TOUR TRONG NƯỚC</a></li>
+                                        <li><a href="../admin/add_laptop.php">TOUR NƯỚC NGOÀI</a></li>
+                                        </ul>
+                                    <li>
+                                    
+                                    <li><a href="#">ORDER</a>
+                                        <ul>
+                                        <li><a href="../admin/show_dt.php">HIỂN THỊ</a></li>
+                                        <li><a href="../admin/show_laptop.php">QUẢN LÍ</a></li>
+                                        </ul>
+                                    <li>
+        
+                                    <li><a href="#">TÀI KHOẢN</a>
+                                        <ul>
+                                            <li><a href="Account.aspx">HIỂN THỊ TÀI KHOẢN</a></li>
+                                            <li><a href="AddUser.aspx">THÊM TÀI KHOẢN</a></li
+                                        </ul>
+                                    <li> 
+        
+                                </ul>
+                            </div>
+
+                            <!-- Main right -->
+                            <div class="right">
+                                <asp:ContentPlaceHolder ID="MainRight" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                     </div>
+                    <div class="clear"></div>
+                    <!-- Footer -->
+                    <div class="footer">
+                        <div>Copyright ©  ĐH- CNTT_ K12. All rights reserved.</div>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
