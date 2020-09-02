@@ -29,7 +29,14 @@ namespace ASP.NET.Admin
                         txtEmail.Text = row[2].ToString();
                         txtAddress.Text = row[4].ToString();
                         txtPhone.Text = row[3].ToString();
-                        txtTrangThai.Text = row[6].ToString();
+                        if(row[6].ToString()=="Enable")
+                        {
+                            rbStatus.SelectedValue = "Enable";
+                        }   
+                        else
+                        {
+                            rbStatus.SelectedValue = "Enable";
+                        }
                         //txtUserName.Text = user.RoleId.ToString();
                         if (int.Parse(row[5].ToString()) == 1)
                         {
@@ -83,9 +90,15 @@ namespace ASP.NET.Admin
                 string phone = txtPhone.Text;
                 string address = txtAddress.Text;
                 int roleId = int.Parse(ddlRole.SelectedValue);
-                string status = txtTrangThai.Text;
-                
-
+                string status ="";
+                if(rbStatus.SelectedValue=="Enable")
+                {
+                    status = "true";
+                }
+                else
+                {
+                    status = "false";
+                }
                 UserDTO user = new UserDTO(userName, email, phone, address, roleId, status);
                 usBUS.InsertUser(user);
 
@@ -98,7 +111,15 @@ namespace ASP.NET.Admin
                 string phone = txtPhone.Text;
                 string address = txtAddress.Text;
                 int roleId = int.Parse(ddlRole.SelectedValue);
-                string status = txtTrangThai.Text;
+                string status = "";
+                if (rbStatus.SelectedValue == "Enable")
+                {
+                    status = "true";
+                }
+                else
+                {
+                    status = "false";
+                }
 
 
                 //UserDTO user = new UserDTO(userName, email, phone, address, roleId, status);

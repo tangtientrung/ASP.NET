@@ -1,0 +1,536 @@
+﻿body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+/*Header*/
+#Header .container {
+    margin-top: 5px;
+}
+
+#Header {
+    height: 70px;
+}
+
+.logo {
+    width: 192px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    float: left;
+    margin: 10px 15px 10px 0;
+}
+
+.btn {
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+.email {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    cursor: pointer;
+}
+
+    .email a {
+        margin-left: 20px;
+    }
+
+.header-right {
+    float: right;
+    width: 260px;
+    margin-top: -70px;
+}
+
+    .header-right .header-right-top {
+        font-family: sf_ui_displayregular;
+        font-size: 12px;
+        float: right;
+        text-align: right;
+        color: #000;
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+
+        .header-right .header-right-top a {
+            padding-right: 10px;
+        }
+
+.header-right-top .giohang {
+    background: #ff9800;
+    color: #fff !important;
+    border-radius: 15px;
+    padding: 3px 7px;
+}
+
+.login {
+    cursor: pointer;
+}
+.login span .signin a:hover{
+    background-color:orangered;
+}
+
+.header-right .login {
+    float: right;
+    margin-top: 3px;
+}
+
+    .header-right .login .signup {
+        box-shadow: inset 0 0 0 1px #ff9300;
+        background: rgba(255,163,0,.1);
+        border-radius: 5px;
+        padding: 4px 20px;
+        color: #ffa300;
+    }
+
+    .header-right .login .signin {
+        margin-left: 10px;
+        color: #fff;
+        background: #ffa300;
+        border-radius: 5px;
+        padding: 4px 13px;
+    }
+
+.buton_home {
+    text-align: center;
+}
+
+
+#menu {
+    width: 100%;
+    border: 1px 1px 1px solid #a49d9d;
+    background-color: #0087FF;
+    float: left;
+}
+
+#menu {
+    height: 40px;
+    text-align: center;
+    color: #ffd800;
+    float: left;
+    font-size: 9px;
+}
+
+    #menu ul {
+        margin-left: 30px;
+        left:20px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+        #menu ul li {
+            display: inline-block;
+            position: relative;
+            width: 120.9px;
+            line-height: 40px;
+            float: left;
+        }
+
+            #menu ul li a {
+                font-family: sf_ui_displayregular;
+                text-decoration: none;
+                color: #FFFFFF;
+                font-weight: bold;
+            }
+
+            #menu ul li:hover {
+                background-color: #FF9800;
+            }
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    float: left;
+    height: 130px;
+    padding-left: 10px;
+}
+
+    .submenu li {
+        width: 150px !important;
+        border-right: none !important;
+    }
+
+        .submenu li a {
+            line-height: 30px !important;
+            margin-left: 20px;
+        }
+
+#menu li:hover .submenu {
+    display: inline-block;
+    top: 10px;
+    left: 0px;
+}
+
+.submenu li a:hover {
+    color: #ffd800 !important;
+}
+
+.submenu li a {
+    text-align: right !important;
+    float: left !important;
+}
+
+.submenu1 {
+    display: none;
+    position: absolute;
+    width: 160px;
+    float: left;
+    height: 130px;
+}
+
+    .submenu1 li {
+        width: 150px !important;
+        border-right: none !important;
+    }
+
+        .submenu1 li a {
+            line-height: 30px !important;
+            margin-left: 20px;
+        }
+
+        .submenu1 li a {
+            text-align: right !important;
+            float: left !important;
+        }
+
+            .submenu1 li a:hover {
+                color: #ffd800 !important;
+            }
+
+#menu li:hover .submenu1 {
+    display: inline-block;
+    left: 240px;
+    top: 10px;
+}
+
+.submenu2 {
+    display: none;
+    position: absolute;
+    width: 160px;
+    float: left;
+    height: 130px;
+}
+
+    .submenu2 li {
+        width: 150px !important;
+        border-right: none !important;
+    }
+
+        .submenu2 li a {
+            line-height: 30px !important;
+            margin-left: 20px;
+        }
+
+        .submenu2 li a {
+            text-align: right !important;
+            float: left !important;
+        }
+
+            .submenu2 li a:hover {
+                color: #ffd800 !important;
+            }
+
+#menu li:hover .submenu2 {
+    display: inline-block;
+    left: 450px;
+    top: 10px;
+}
+
+.id1 {
+    width: 800px;
+    background-color: #0087FF;
+    min-height: 280px;
+    display: none;
+    margin-left: -50px;
+}
+
+#menu li:hover .id1 {
+    position: absolute;
+    display: block;
+}
+
+
+
+h3 {
+    width: 120px;
+    text-align: left;
+}
+
+
+.submenu3 {
+    display: none;
+    position: absolute;
+    width: 150px;
+    float: left;
+    height: 130px;
+}
+
+    .submenu3 li {
+        width: 150px !important;
+        border-right: none !important;
+    }
+
+        .submenu3 li a {
+            line-height: 30px !important;
+            margin-left: 20px;
+        }
+
+        .submenu3 li a {
+            text-align: right !important;
+            float: left !important;
+        }
+
+            .submenu3 li a:hover {
+                color: #ffd800 !important;
+            }
+
+#menu li:hover .submenu3 {
+    display: inline-block;
+    left: 650px;
+    top: 10px;
+}
+
+
+/*/Menu*/
+/*banner*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+/*/banner*/
+
+.dich_vu {
+    position: relative;
+    top: -94px;
+    z-index: 1;
+}
+
+.search {
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.12);
+    background-color: #fff;
+    height: 100px;
+}
+
+.tab_search {
+    display: flex;
+    
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.12);
+    background-color: #fff;
+    height: 100px;
+}
+
+.search .timkiem {
+    font-family: sf_ui_displayregular;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0f62ac;
+    line-height: 16px;
+    padding-bottom: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.check_tour {
+    width: 100%;
+    font-family: sf_ui_displayregular;
+    font-size: 14px;
+    color: #000;
+    margin-top: 0;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .check_tour .check_tour1 {
+        float: left;
+        margin-right: 22px;
+        line-height: 16px;
+    }
+
+        .check_tour .check_tour1 .to {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #0f62ac;
+            display: block;
+            float: left;
+            border-radius: 100%;
+            position: relative;
+            margin-right: 10px;
+        }
+
+        .check_tour .check_tour1 .nho {
+            width: 12px;
+            height: 12px;
+            display: block;
+            float: left;
+            border-radius: 100%;
+            position: absolute;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+        }
+
+
+    #sort{
+        float:left;
+    }
+#photo-footer {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: sf_ui_displayregular;
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Image1 {
+    vertical-align: middle;
+    border-style: none;
+    animation: .5s fadein;
+ 
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    transform: translate(-50%,-50%) scale(1) rotate(0);
+    border-radius: 3px;
+    transition: .3s;
+    display:inline-table ;
+}
+#anhhot{
+    width:100%;
+ max-height:150px;
+    overflow:hidden;
+    
+}
+/*Footer*/
+.title_footer {
+    margin-top: 46px;
+    position: unset;
+}
+.title_footer h3 {
+    font-family: sf_ui_displayregular;
+    font-size: 13px;
+    font-weight: 700;
+    width:200px;
+    color: #fff;
+    border-left: 3px solid #ff9300;
+    padding-left: 7px;
+    margin: 0 0 20px;
+}
+.title_footer ul {
+    display: block;
+    list-style-type: disc;
+}
+    .title_footer ul li{
+        color: deepskyblue;
+    }
+    .title_footer ul li {
+        list-style: none;
+        line-height: 15.5px;
+        list-style-type: disc;
+    }
+
+        .title_footer ul li a {
+            font-family: sf_ui_displayregular;
+            font-size: 14px;
+            color: #fff;
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 18px;
+        }
+.vien_tren {
+    width: 1110px;
+    height: 1px;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+}
+.logo2 a img {
+    width: 250px;
+    height: 86px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.title_dia_chi h3{
+    font-family: sf_ui_displayregular;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    width:400px;
+}
+.dia_chi ul li {
+    display: flex;
+    list-style: none;
+    line-height: 15.5px;
+    padding-bottom: 20px;
+    font-family: sf_ui_displayregular;
+    font-size: 14px;
+    color: #fff;
+}
+.lienhe_cong_dong span {
+    font-family: sf_ui_displayregular;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: -6px;
+    color: #fff;
+}
+.lienhe_cong_dong a img {
+    width: 36px;
+    height: 36px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.group20 a {
+    font-family: sf_ui_displayregular;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    margin: auto;
+    display: inline;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+/*/Footer*/
+#ft{
+    height:200px;
+}
+#hottour{
+    height:970px;
+}

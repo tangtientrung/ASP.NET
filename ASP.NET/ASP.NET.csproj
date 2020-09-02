@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Account.aspx" />
+    <Content Include="Admin\AddForeginPlace.aspx" />
     <Content Include="Admin\AddForeignTour.aspx" />
     <Content Include="Admin\AddPlace.aspx" />
     <Content Include="Admin\AddTour.aspx" />
@@ -93,11 +94,59 @@
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\Tour.aspx" />
     <Content Include="HomePage\Chitiettour.aspx" />
+    <Content Include="HomePage\CSS\StyleHome.css" />
     <Content Include="HomePage\Giohang.aspx" />
     <Content Include="HomePage\Home1.aspx" />
     <Content Include="HomePage\WebForm1.aspx" />
+    <Content Include="Image\Home\demthienglieng.jpg" />
+    <Content Include="Image\Home\envelope.png" />
+    <Content Include="Image\Home\facebook.png" />
+    <Content Include="Image\Home\footer.jpg" />
+    <Content Include="Image\Home\giohang.png" />
+    <Content Include="Image\Home\halongbay.jpg" />
+    <Content Include="Image\Home\hanoi.jpg" />
+    <Content Include="Image\Home\hanoitour.jpg" />
+    <Content Include="Image\Home\instar.png" />
+    <Content Include="Image\Home\logo.jpg" />
+    <Content Include="Image\Home\logo5.png" />
+    <Content Include="Image\Home\logo6.png" />
+    <Content Include="Image\Home\phone-call.png" />
+    <Content Include="Image\Home\sdlhn.png" />
+    <Content Include="Image\Home\tiwster.png" />
+    <Content Include="Image\Home\youtube.png" />
+    <Content Include="Image\Tour1\han.png" />
+    <Content Include="Image\Tour1\my.png" />
+    <Content Include="Image\Tour1\p.png" />
+    <Content Include="Image\Tour1\sing.jfif" />
+    <Content Include="Image\Tour1\t11.jfif" />
+    <Content Include="Image\Tour1\t12.jfif" />
+    <Content Include="Image\Tour1\t13.jfif" />
+    <Content Include="Image\Tour1\t14.jfif" />
+    <Content Include="Image\Tour1\t15.png" />
+    <Content Include="Image\Tour1\t16.jfif" />
+    <Content Include="Image\Tour1\t17.jfif" />
+    <Content Include="Image\Tour1\t18.jfif" />
+    <Content Include="Image\Tour1\t19.jfif" />
+    <Content Include="Image\Tour1\t20.jfif" />
+    <Content Include="Image\Tour1\thai.png" />
+    <Content Include="Image\Tour1\y.png" />
     <Content Include="Image\Tour\1.jpg" />
     <Content Include="Image\Tour\2.jpg" />
+    <Content Include="Image\Tour\f2 %281%29.jpg" />
+    <Content Include="Image\Tour\f2 %282%29.jpg" />
+    <Content Include="Image\Tour\f3.jpg" />
+    <Content Include="Image\Tour\l1.jpg" />
+    <Content Include="Image\Tour\l10.jpg" />
+    <Content Include="Image\Tour\l11.jpg" />
+    <Content Include="Image\Tour\l12.jpg" />
+    <Content Include="Image\Tour\l2.jpg" />
+    <Content Include="Image\Tour\l3.jpg" />
+    <Content Include="Image\Tour\l4.jpg" />
+    <Content Include="Image\Tour\l5.jpg" />
+    <Content Include="Image\Tour\l6.jpg" />
+    <Content Include="Image\Tour\l7.jpg" />
+    <Content Include="Image\Tour\l8.jpg" />
+    <Content Include="Image\Tour\l9.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +156,13 @@
     </Compile>
     <Compile Include="Admin\Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddForeginPlace.aspx.cs">
+      <DependentUpon>AddForeginPlace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddForeginPlace.aspx.designer.cs">
+      <DependentUpon>AddForeginPlace.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AddForeignTour.aspx.cs">
       <DependentUpon>AddForeignTour.aspx</DependentUpon>

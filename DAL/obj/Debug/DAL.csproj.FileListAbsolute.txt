@@ -15,3 +15,4 @@ C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cac
 C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.dll
 C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.pdb
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

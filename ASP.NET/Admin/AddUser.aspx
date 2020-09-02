@@ -34,7 +34,10 @@
             </tr>
             <tr>
                 <td style="width: 20%"><asp:Label ID="Label6" runat="server" Text="Trạng thái:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
-                <td><asp:TextBox ID="txtTrangThai" runat="server" Width="100%"></asp:TextBox></td>
+                <td><asp:RadioButtonList ID="rbStatus" runat="server">
+                        <asp:ListItem >Enable</asp:ListItem>
+                        <asp:ListItem>Disable</asp:ListItem>
+                    </asp:RadioButtonList></td>
             </tr>
             
         </table>

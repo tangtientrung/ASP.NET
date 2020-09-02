@@ -14,7 +14,7 @@
         </tr>
         <tr>
             <td style="width:100px"><asp:Label ID="Label2" runat="server" Text="Tên thành phố"></asp:Label></td>
-            <td><asp:TextBox ID="TextBox2" runat="server" Width="328px"></asp:TextBox></td>
+            <td><asp:TextBox ID="txtPlaceName" runat="server" Width="328px"></asp:TextBox></td>
         </tr>
         <tr>
             <td style="width:100px"><asp:Label ID="Label3" runat="server" Text="Miền"></asp:Label></td>
@@ -29,7 +29,7 @@
         </tr>
         
         <tr>
-            <td colspan="2"><asp:Button ID="btnThem" runat="server" Text="Thêm" /></td>
+            <td colspan="2"><asp:Button ID="btnThem" runat="server" Text="Thêm" OnClick="btnThem_Click" /></td>
         </tr>
     </table>
 

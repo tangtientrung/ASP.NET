@@ -46,7 +46,7 @@
                 <div class="header-right-top">
                     <a class="gioithieu" title="Giới Thiệu" href="#">Giới Thiệu</a>
                     <a class="lienhe" title="Liên Hệ" href="#">Liên Hệ</a>
-                    <a class="giohang" title="Giỏ Hàng" href="#">Giỏ Hàng</a>
+                    <a class="giohang" title="Giỏ Hàng" href="Giohang.aspx">Giỏ Hàng</a>
                 </div>
                 <div class="login">
                     <span class="signup">

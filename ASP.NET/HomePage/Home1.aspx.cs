@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BUS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,9 +23,11 @@ namespace ASP.NET.HomePage
             }
             return string.Empty;
         }
+        TourBUS tourBus = new TourBUS();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          //  DataList1.DataSource = tourBus.GetAllTour();
+            //DataList1.DataBind();
         }
 
         protected void btnleft_Click(object sender, EventArgs e)
