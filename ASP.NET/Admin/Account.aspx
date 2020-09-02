@@ -6,7 +6,7 @@
                      
                      <div id="search" style="width:100%;height:50px">
                                 <asp:TextBox ID="txtTim" Width="30%" runat="server"></asp:TextBox>
-                                <asp:Button ID="btnTim" style="line-height:50px;margin-top:10px" runat="server" Text="Tìm"  PostBackUrl='<%#"~/Admin/Account.aspx?UserName="+txtTim.Text %>'  />                     
+                                        
 
                      </div>
     

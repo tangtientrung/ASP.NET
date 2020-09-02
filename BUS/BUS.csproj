@@ -47,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlaceBUS.cs" />
+    <Compile Include="CountryBUS.cs" />
     <Compile Include="TourBUS.cs" />
+    <Compile Include="OrderBUS.cs" />
     <Compile Include="UserBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

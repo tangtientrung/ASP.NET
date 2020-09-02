@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnection.cs" />
+    <Compile Include="CountryDAL.cs" />
+    <Compile Include="PlaceDAL.cs" />
+    <Compile Include="OrderDAL.cs" />
     <Compile Include="TourDAL.cs" />
     <Compile Include="UserDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

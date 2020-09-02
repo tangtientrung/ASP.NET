@@ -77,9 +77,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Account.aspx" />
+    <Content Include="Admin\AddForeignTour.aspx" />
+    <Content Include="Admin\AddPlace.aspx" />
     <Content Include="Admin\AddTour.aspx" />
     <Content Include="Admin\AddUser.aspx" />
     <Content Include="Admin\Css\Style.css" />
+    <Content Include="Admin\ForeignTour.aspx" />
+    <Content Include="Admin\Image\Icon\icons8-account-30.png" />
+    <Content Include="Admin\Image\Icon\icons8-add-50.png" />
+    <Content Include="Admin\Image\Icon\icons8-admin-settings-male-30.png" />
+    <Content Include="Admin\Image\Icon\icons8-dashboard-30.png" />
+    <Content Include="Admin\Image\Icon\icons8-drop-down-24.png" />
+    <Content Include="Admin\Image\Icon\icons8-purchase-order-30.png" />
+    <Content Include="Admin\Image\Icon\icons8-tour-bus-40.png" />
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\Tour.aspx" />
     <Content Include="Image\Tour\1.jpg" />
@@ -93,6 +103,20 @@
     </Compile>
     <Compile Include="Admin\Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddForeignTour.aspx.cs">
+      <DependentUpon>AddForeignTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddForeignTour.aspx.designer.cs">
+      <DependentUpon>AddForeignTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddPlace.aspx.cs">
+      <DependentUpon>AddPlace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddPlace.aspx.designer.cs">
+      <DependentUpon>AddPlace.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AddTour.aspx.cs">
       <DependentUpon>AddTour.aspx</DependentUpon>
@@ -114,6 +138,13 @@
     </Compile>
     <Compile Include="Admin\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ForeignTour.aspx.cs">
+      <DependentUpon>ForeignTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ForeignTour.aspx.designer.cs">
+      <DependentUpon>ForeignTour.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
@@ -141,9 +172,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\Image\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

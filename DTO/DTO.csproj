@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderDTO.cs" />
+    <Compile Include="PlaceDTO.cs" />
     <Compile Include="TourDTO.cs" />
+    <Compile Include="CountryDTO.cs" />
     <Compile Include="UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

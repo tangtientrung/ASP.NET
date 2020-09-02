@@ -7,3 +7,11 @@ C:\Users\ASUS\source\repos\ASP.NET\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ASUS\source\repos\ASP.NET\DAL\obj\Debug\DAL.dll
 C:\Users\ASUS\source\repos\ASP.NET\DAL\obj\Debug\DAL.pdb
 C:\Users\ASUS\source\repos\ASP.NET\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\bin\Debug\DAL.dll
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\bin\Debug\DAL.pdb
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\bin\Debug\DTO.dll
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\bin\Debug\DTO.pdb
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.dll
+C:\Users\ASUS\Desktop\ASP\ASP.NET\DAL\obj\Debug\DAL.pdb

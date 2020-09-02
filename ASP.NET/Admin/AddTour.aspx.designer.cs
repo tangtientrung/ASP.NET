@@ -24,13 +24,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// txtUserName control.
+        /// txtId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUserName;
+        protected global::System.Web.UI.WebControls.TextBox txtId;
 
         /// <summary>
         /// Label2 control.
@@ -42,13 +42,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// uploadAnh control.
+        /// fileUploadAnh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload uploadAnh;
+        protected global::System.Web.UI.WebControls.FileUpload fileUploadAnh;
 
         /// <summary>
         /// Label3 control.
@@ -60,13 +60,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// txtPhone control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPhone;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
         /// Label4 control.
@@ -78,13 +78,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// txtAddress control.
+        /// txtDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAddress;
+        protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
         /// Label5 control.
@@ -96,13 +96,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// TextBox7 control.
+        /// txtPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
         /// <summary>
         /// Label6 control.
@@ -114,13 +114,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// txtTrangThai control.
+        /// txtDeparture control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTrangThai;
+        protected global::System.Web.UI.WebControls.TextBox txtDeparture;
 
         /// <summary>
         /// Label7 control.
@@ -132,13 +132,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label7;
 
         /// <summary>
-        /// TextBox1 control.
+        /// txtDestination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtDestination;
 
         /// <summary>
         /// Label8 control.
@@ -150,13 +150,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label8;
 
         /// <summary>
-        /// TextBox2 control.
+        /// txtTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtTime;
 
         /// <summary>
         /// Label9 control.
@@ -168,13 +168,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label9;
 
         /// <summary>
-        /// ddlPhuongTien control.
+        /// ddlVehicle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPhuongTien;
+        protected global::System.Web.UI.WebControls.DropDownList ddlVehicle;
 
         /// <summary>
         /// Label10 control.
@@ -186,13 +186,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label10;
 
         /// <summary>
-        /// TextBox4 control.
+        /// txtSchedule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox txtSchedule;
 
         /// <summary>
         /// Label11 control.
@@ -204,13 +204,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label11;
 
         /// <summary>
-        /// ddlTp control.
+        /// ddlPlace control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTp;
+        protected global::System.Web.UI.WebControls.DropDownList ddlPlace;
 
         /// <summary>
         /// Label12 control.
@@ -222,13 +222,13 @@ namespace ASP.NET.Admin
         protected global::System.Web.UI.WebControls.Label Label12;
 
         /// <summary>
-        /// TextBox6 control.
+        /// rbStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbStatus;
 
         /// <summary>
         /// btnThem control.
@@ -238,15 +238,6 @@ namespace ASP.NET.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnThem;
-
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
         /// SelectAllPlace control.
