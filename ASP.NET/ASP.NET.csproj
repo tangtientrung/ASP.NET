@@ -92,6 +92,10 @@
     <Content Include="Admin\Image\Icon\icons8-tour-bus-40.png" />
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\Tour.aspx" />
+    <Content Include="HomePage\Chitiettour.aspx" />
+    <Content Include="HomePage\Giohang.aspx" />
+    <Content Include="HomePage\Home1.aspx" />
+    <Content Include="HomePage\WebForm1.aspx" />
     <Content Include="Image\Tour\1.jpg" />
     <Content Include="Image\Tour\2.jpg" />
     <Content Include="Web.config" />
@@ -160,10 +164,46 @@
     <Compile Include="Admin\Tour.aspx.designer.cs">
       <DependentUpon>Tour.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HomePage\Chitiettour.aspx.cs">
+      <DependentUpon>Chitiettour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Chitiettour.aspx.designer.cs">
+      <DependentUpon>Chitiettour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Giohang.aspx.cs">
+      <DependentUpon>Giohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Giohang.aspx.designer.cs">
+      <DependentUpon>Giohang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AdminMasterPage.Master" />
+    <Content Include="HomePage\Main.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

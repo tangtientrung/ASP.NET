@@ -17,7 +17,7 @@ namespace ASP.NET.Admin
 
         protected void btnThem_Click(object sender, EventArgs e)
         {
-            CountryDTO country=new CountryDTO()
+            CountryDTO country = new CountryDTO();
         }
     }
 }
