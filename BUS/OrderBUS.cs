@@ -17,9 +17,9 @@ namespace BUS
             string sql = "Select * From Orders";
             return orderDal.GetTable(sql);
         }
-        public void UpdateOrder(int userId,  string tourId, string status)
+        public void UpdateOrder(int userId,  string tourId)
         {
-            string sql = "Update Orders set UserId=" + userId + " ,TourId=N'" + tourId + "',Status=N'" + status + "' Where UserId="+userId+" And TourId='"+tourId+"'";
+            string sql = "Update Orders set UserId=" + userId + " ,TourId=N'" + tourId + "' Where UserId="+userId+" And TourId='"+tourId+"'";
             orderDal.ExcuteNonQuery(sql);
         }
         

@@ -14,27 +14,27 @@ namespace BUS
         UserDAL usDAL = new UserDAL();
         public DataTable GetAllUser()
         {
-            string sql = "Select * From Users join Role on Role.RoleId=Users.RoleId";
+            string sql = "Select * From Users";
             return usDAL.GetTable(sql);
         }
-        public void UpdateUser(string userName, string email, string phone, string address, int roleId, string status, int userId)
+        public void UpdateUser(string userName, string email,string pass, string phone, string address, string roleId, int userId)
         {
-            string sql = "Update Users set UserName=N'" + userName + "' ,Email=N'" + email + "' ,Address=N'" + address + "' ,Phone=N'" + phone + "' ,RoleId=" + roleId + " ,Status=N'" + status + "' Where UserId="+userId+"";
+            string sql = "Update Users set UserName=N'" + userName + "' ,Email=N'" + email + "' , Pass=N'" + pass + "', Address=N'" + address + "' ,Phone=N'" + phone + "' ,RoleId='" + roleId + "'  Where UserId="+userId+"";
             usDAL.ExcuteNonQuery(sql);
         }
         public DataTable GetUser(int Id)
         {
-            string sql = "Select * From Users join Role on Role.RoleId=Users.RoleId Where UserId='" + Id + "'";
+            string sql = "Select * From Users UserId='" + Id + "'";
             return usDAL.GetTable(sql);
         }
         public void InsertUser(UserDTO user)
         {
-            string sql = "Insert into Users Values (N'" + user.UserName + "',N'" + user.Email + "',N'" + user.Phone + "',N'" + user.Address + "'," + user.RoleId + ",N'" + user.Status + "')";
+            string sql = "Insert into Users Values (N'" + user.UserName + "',N'" + user.Email + "',N'" + user.Pass + "',N'" + user.Phone + "',N'" + user.Address + "'," + user.RoleId + ",N')";
             usDAL.ExcuteNonQuery(sql);   
         }
         public DataTable SearchUser(string name)
         {
-            string sql = "Select * From Users join Role on Role.RoleId=Users.RoleId Where UserName='" + name + "'";
+            string sql = "Select * From Users join Role" + name + "'";
             return usDAL.GetTable(sql);
         }
         public void DeleteUser(int id)
