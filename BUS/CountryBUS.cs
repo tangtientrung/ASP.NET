@@ -18,6 +18,12 @@ namespace BUS
             string sql = "Insert into Country Values (N'" + country.CountryId + "',N'" + country.CountryName + "')";
             countryDal.ExcuteNonQuery(sql);   
         }
+        public DataTable SelectAllCountry()
+        {
+            string sql = "Select * From Country Where CountryId='N02'";
+            return countryDal.GetTable(sql);
+        }
+        
        
     }
 }

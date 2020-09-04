@@ -19,7 +19,7 @@
         <tr>
             <td style="width:100px"><asp:Label ID="Label3" runat="server" Text="Châu lục"></asp:Label></td>
             <td>
-            <asp:DropDownList ID="ddlCountry" runat="server" DataSourceID="SqlDataSource1" DataTextField="CountryName" DataValueField="CountryId" ></asp:DropDownList>
+            <asp:DropDownList ID="ddlCountry" runat="server"></asp:DropDownList>
 
             </td>
         </tr>

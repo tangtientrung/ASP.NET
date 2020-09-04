@@ -11,9 +11,16 @@ namespace ASP.NET.Admin
 {
     public partial class AddForeginPlace : System.Web.UI.Page
     {
+        CountryBUS countryBUS = new CountryBUS();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                ddlCountry.DataSource=countryBUS.SelectAllCountry();
+                ddlCountry.DataBind();
+                ddlCountry.DataTextField = "CountryName";
+                ddlCountry.DataValueField = "CountryId";
+            }
         }
         PlaceBUS placeBus = new PlaceBUS();
         protected void btnThem_Click(object sender, EventArgs e)
