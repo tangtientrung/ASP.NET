@@ -14,13 +14,19 @@ namespace ASP.NET.Admin
         UserBUS userBUS = new UserBUS();
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*int id = int.Parse(Session["Id"].ToString());
+            int id = int.Parse(Session["Id"].ToString());
             string name = "";
             foreach (DataRow row in userBUS.GetUser(id).Rows)
             {
                 name = row[1].ToString();
             }
-            lbName.Text = name;*/
+            lbName.Text = name;
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Login/Login.aspx");
+        }
+        
     }
 }

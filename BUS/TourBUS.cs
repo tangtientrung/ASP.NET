@@ -41,9 +41,9 @@ namespace BUS
             string tourDeparture, string tourDestination, string tourTime, string tourVehicle, string tourSchedule,
             string placeId, string status)
         {
-            string sql = "Update Tour set TourPhoto='" + tourPhoto + "' ,TourName='" + tourName + "' ,TourDescription='" + tourDescription + "' ,TourPrice=" + tourPrice + "" +
-                " ,TourDeparture='" + tourDeparture + "' ,TourDestination='" + tourDestination + "' ,TourTime='" + tourTime + "' ,TourVehicle='" + tourVehicle + "' ,TourSchedule='" + tourSchedule + "' " +
-                ",PlaceId='" + placeId + "' ,Status='" + status + "'  Where TourId='" + tourId + "'";
+            string sql = "Update Tour set TourPhoto=N'" + tourPhoto + "' ,TourName=N'" + tourName + "' ,TourDescription=N'" + tourDescription + "' ,TourPrice=" + tourPrice + "" +
+                " ,TourDeparture=N'" + tourDeparture + "' ,TourDestination=N'" + tourDestination + "' ,TourTime=N'" + tourTime + "' ,TourVehicle=N'" + tourVehicle + "' ,TourSchedule=N'" + tourSchedule + "' " +
+                ",PlaceId=N'" + placeId + "' ,Status=N'" + status + "'  Where TourId='" + tourId + "'";
             tourDAL.ExcuteNonQuery(sql);
         }
         public void DeleteTour(string id)

@@ -16,57 +16,53 @@ body {
     margin: 0px auto;
 }
 
+
 #top {
     width: 100%;
-    height: 100px;
+    max-height: 50px;
+    line-height: 50px;
+   
 }
-
-    #top #search input[type=submit] {
-        width: 100px;
-        height: 39px;
-        margin: 5px 0px 5px 0px;
-        float: left;
+#top #logo
+{
+    width:30%;
+    float:left;
+    height:50px;
+}
+#top #account 
+{
+    width:65%;
+    height:50px;
+    float:left
+    
+}
+#top #account .name
+{
+    line-height:30px;
+    height:30px;
+    
+    margin-left:1100px;
+    
+}
+    #top #account .name img
+    {
+        margin-left:100px;
     }
-
-#account {
-    width: 150px;
-    height: 50px;
-    float: right;
-}
-
-#wrapper #top #account a {
-    text-decoration: none;
-    color: rgb(2, 1, 24);
-}
-
-#wrapper #top #account img {
-    width: 30px;
-    height: 35px;
-    margin: 5px 0px 5px 0px;
-}
-
-#wrapper #top #account p {
-    line-height: 50px;
-}
-
-.top {
-    float: left;
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    line-height: 50px;
-    background-color: khaki;
-}
-
+    #top #account .button {
+        margin-left: 1290px;
+        height: 30px;
+        line-height:30px;
+        margin-top: -12px
+    }
 .clear {
     clear: both;
+
 }
 
 .main {
     width: 100%;
     border: 1px;
 }
-
 .main .left {
         width: 20%;
         height: 500px;
@@ -76,9 +72,9 @@ body {
     }
 
     .main .right {
-        width: 75%;
+        width: 79%;
         float: left;
-        margin-left: 10px;
+        margin-left: 1%;
         background-color: blanchedalmond;
     }
 .main .left ul.ulmain li a {

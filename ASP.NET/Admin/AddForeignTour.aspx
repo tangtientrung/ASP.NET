@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td style="width: 20%"><asp:Label ID="Label11" runat="server" Text="Quốc gia:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
-                <td><asp:DropDownList ID="ddlPlace" runat="server" DataSourceID="SelectAllForeignTour" DataTextField="PlaceName" DataValueField="PlaceId"></asp:DropDownList></td>
+                <td><asp:DropDownList ID="ddlPlace" runat="server" ></asp:DropDownList></td>
             </tr>
             <tr>
                 <td style="width: 20%"><asp:Label ID="Label12" runat="server" Text="Trạng thái:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
@@ -67,9 +67,7 @@
         </table>
         <asp:Button ID="btnThem" runat="server" Text="Lưu" style="margin-left:150px" OnClick="btnThem_Click"   />
     
-            <asp:SqlDataSource ID="SelectAllForeignTour" runat="server" ConnectionString="<%$ ConnectionStrings:SelectAllForeignPlace %>" SelectCommand="SELECT * FROM [Place] WHERE ([CountryId] ='N02')">
-                
-    </asp:SqlDataSource>
+           
         <br />
     
 </asp:Content>

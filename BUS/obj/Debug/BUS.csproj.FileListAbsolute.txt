@@ -28,3 +28,4 @@ C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.
 C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.dll
 C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.csprojAssemblyReference.cache

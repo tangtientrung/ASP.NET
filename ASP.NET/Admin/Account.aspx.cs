@@ -24,7 +24,7 @@ namespace ASP.NET.Admin
             }
             else
             {
-                
+                txtTim.Attributes.Add("onkeypress", "return clickButton(event,'" + btnTim.ClientID + "')");
                 grvUser.DataSource = usBus.GetAllUser();
                 grvUser.DataBind();
             }

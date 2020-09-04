@@ -1,12 +1,40 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="Account.aspx.cs" Inherits="ASP.NET.Admin.Account" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    
+    <script type="text/javascript">
+
+
+
+        function clickButton(e, buttonid)
+
+        {  
+
+          var evt = e ? e : window.event; 
+
+          var bt = document.getElementById(buttonid); 
+
+
+
+          if (bt){
+
+              if (evt.keyCode == 13){  
+
+                    bt.click();  
+
+                    return false;  
+
+              }  
+
+          }  
+
+        } 
+
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainRight" runat="server">
                      
                      <div id="search" style="width:100%;height:50px">
                                 <asp:TextBox ID="txtTim" Width="30%" runat="server" placeholder="Nhập vào tên khách hàng"></asp:TextBox>
-                                        
+                                 <asp:Button ID="btnTim" style="line-height:50px;margin-top:10px" runat="server" Text="Tìm"  PostBackUrl='<%#"~/Admin/Account.aspx?Username="+txtTim.Text %>'  />       
 
                      </div>
     

@@ -156,7 +156,7 @@ namespace ASP.NET.Admin
                         
                         txtPhone.Text = row[4].ToString();
                         txtAddress.Text = row[5].ToString();
-                        if( row[6].ToString()=="Admin")
+                        if( row[6].ToString().Trim()=="Admin")
                         {
                             ddlRole.SelectedValue = "Admin";
 

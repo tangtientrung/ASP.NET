@@ -26,7 +26,7 @@ namespace ASP.NET.Admin
             }
             else
             {
-
+                txtTim.Attributes.Add("onkeypress", "return clickButton(event,'" + btnTim.ClientID + "')");
                 grvTour.DataSource = tourBus.GetAllForeignTour();
                 grvTour.DataBind();
             }

@@ -13,7 +13,7 @@ namespace ASP.NET.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            //Label1.Text = Session["Id"].ToString();
+            Response.Write(" <script> alert('Chào mừng bạn đến với trang quản trị!') </script> ");
         }
     }
 }

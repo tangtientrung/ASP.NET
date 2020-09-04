@@ -14,6 +14,7 @@ namespace ASP.NET.Admin
     {
         TourDTO tour = new TourDTO();
         TourBUS tourBus = new TourBUS();
+        PlaceBUS placeBUS = new PlaceBUS();
         string tourId = "";
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -55,9 +56,17 @@ namespace ASP.NET.Admin
                 if (!IsPostBack)
                 {
                     tourBus.DeleteTour(Request.QueryString["Ids"]);
-                    Response.Redirect("Tour.aspx");
+                    Response.Redirect("ForeignTour.aspx");
                 }
             }
+            if (!IsPostBack)
+            {
+                ddlPlace.DataSource = placeBUS.GetAllForeignPlace();
+                ddlPlace.DataTextField = "PlaceName";
+                ddlPlace.DataValueField = "PlaceId";
+                ddlPlace.DataBind();
+            }
+
         }
         public void Save()
         {
@@ -124,6 +133,7 @@ namespace ASP.NET.Admin
                     ddlPlace.SelectedValue,
                     status);
                 Response.Write("<script>alert('Thành công!')</script>");
+                Response.Redirect("ForeignTour.aspx");
             }
         }
     }

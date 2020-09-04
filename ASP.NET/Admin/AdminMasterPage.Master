@@ -16,17 +16,16 @@
                     <!-- TOP -->
 
                     <div id="top">
-                        <div id="search">
-                                <input type="text"  name="search" placeholder="Nhập sản phẩm cần tìm..."/>
-                                <!--src='/shopdt/img/search.jpg'/>-->
-                                <!--<input type="submit" name="submit" value="SEARCH"/>-->
-                                <button type="submit" name="submit" >
-                                    Submit
-                                </button>
+                        <div id="logo">
+                            <img src="Image/Icon/logo.jpg" style="width:200px;height:50px" />
+
                         </div>
                         <div id="account">
-                            <p>Xin chào:Admin</p>
-      Xin chào:Admin</p>
+                            <div style="margin-left:732px">
+                            <img src = "Image/Icon/icons8-admin-settings-male-30.png" />
+                            <asp:Label ID = "lbName" runat="server" ></asp:Label>
+                            <asp:Button ID = "btnLogout" runat="server" Text="Đăng xuất" OnClick="btnLogout_Click" />
+                                </div>
                         </div>
                     </div>
 
@@ -36,58 +35,46 @@
                             <!-- Left -->
                             <div class="left">
                                 <ul class="ulmain">
-                                    
-                                    <li>
-                                        
-                                        <a href="#" style="margin-left:5px">
-                                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Admin/Image/Icon/icons8-tour-bus-40.png" Height="30px" Width="30px"/>
-                                            TOUR                    
-                                            
-                                            <ul>
-                                                <li><a href="Tour.aspx">TOUR TRONG NƯỚC</a></li>
-                                                <li><a href="ForeignTour.aspx">TOUR NƯỚC NGOÀI</a></li>
-                                                <li><a href="HotTour.aspx">HOT TOUR</a></li>
-                                            </ul>
-                                    </li>
-                                    
-                                    <li>
-                                        
-                                        
-                                        <a href="#" style="margin-left:5px">
-                                            <asp:Image ID="Image3" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-purchase-order-30.png"/>
-                                            ORDER</a>
-                                        
+                                    <li><a href="#" style="margin-left:5px">
+                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Admin/Image/Icon/icons8-tour-bus-40.png" Height="30px" Width="30px"/>
+                                        TOUR
                                         <ul>
-                                        <li><a href="AnalysisOrder.aspx">PHÂN TÍCH</a></li>
-                                        <li><a href="ManageOrder.aspx">QUẢN LÍ</a></li>
-                                         
+                                            <li><a href="Tour.aspx">TOUR TRONG NƯỚC</a></li>
+                                            <li><a href="ForeignTour.aspx">TOUR NƯỚC NGOÀI</a></li>
+                                            <li><a href="HotTour.aspx">HOT TOUR</a></li>
                                         </ul>
                                     </li>
-        
-                                    <li>
-                                       
-                                        <a href="#" style="margin-left:5px">
-                                             <asp:Image ID="Image2" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-account-30.png"/>
-                                            TÀI KHOẢN</a>
+                                    <li><a href="#" style="margin-left:5px">
+                                        <asp:Image ID="Image3" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-purchase-order-30.png"/>
+                                        ORDER</a>
+                                        <ul>
+                                            <li><a href="AnalysisOrder.aspx">PHÂN TÍCH</a></li>
+                                            <li><a href="ManageOrder.aspx">QUẢN LÍ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" style="margin-left:5px">
+                                        <asp:Image ID="Image2" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-account-30.png"/>
+                                        TÀI KHOẢN</a>
                                         <ul>
                                             <li><a href="Account.aspx">QUẢN LÍ</a></li>
                                             <li><a href="AddUser.aspx">THÊM TÀI KHOẢN</a></li>
                                         </ul>
-                                    </li> 
-        
+                                    </li>
                                 </ul>
-                            </div>
+                        </div>
 
                             <!-- Main right -->
                             <div class="right">
                                 <asp:ContentPlaceHolder ID="MainRight" runat="server">
                                 </asp:ContentPlaceHolder>
-                            </div>
-                     </div>
-                    <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
                     <!-- Footer -->
                     <div class="footer">
-                        <div>Copyright ©  ĐH- CNTT_ K12. All rights reserved.</div>
+                        <div>
+                            Copyright ©  ĐH- CNTT_ K12. All rights reserved.</div>
                     </div>
                 </div>
             </asp:ContentPlaceHolder>

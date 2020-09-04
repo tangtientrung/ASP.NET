@@ -77,9 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Account.aspx" />
-    <Content Include="Admin\AddForeginPlace.aspx" />
     <Content Include="Admin\AddForeignTour.aspx" />
-    <Content Include="Admin\AddPlace.aspx" />
     <Content Include="Admin\AddTour.aspx" />
     <Content Include="Admin\AddUser.aspx" />
     <Content Include="Admin\AnalysisOrder.aspx" />
@@ -94,6 +92,7 @@
     <Content Include="Admin\Image\Icon\icons8-drop-down-24.png" />
     <Content Include="Admin\Image\Icon\icons8-purchase-order-30.png" />
     <Content Include="Admin\Image\Icon\icons8-tour-bus-40.png" />
+    <Content Include="Admin\Image\Icon\logo.jpg" />
     <Content Include="Admin\ManageOrder.aspx" />
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\Tour.aspx" />
@@ -170,26 +169,12 @@
     <Compile Include="Admin\Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddForeginPlace.aspx.cs">
-      <DependentUpon>AddForeginPlace.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\AddForeginPlace.aspx.designer.cs">
-      <DependentUpon>AddForeginPlace.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\AddForeignTour.aspx.cs">
       <DependentUpon>AddForeignTour.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\AddForeignTour.aspx.designer.cs">
       <DependentUpon>AddForeignTour.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AddPlace.aspx.cs">
-      <DependentUpon>AddPlace.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\AddPlace.aspx.designer.cs">
-      <DependentUpon>AddPlace.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AddTour.aspx.cs">
       <DependentUpon>AddTour.aspx</DependentUpon>

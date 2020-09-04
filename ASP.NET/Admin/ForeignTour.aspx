@@ -1,10 +1,39 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="ForeignTour.aspx.cs" Inherits="ASP.NET.Admin.ForeignTour" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+
+
+
+        function clickButton(e, buttonid)
+
+        {  
+
+          var evt = e ? e : window.event; 
+
+          var bt = document.getElementById(buttonid); 
+
+
+
+          if (bt){
+
+              if (evt.keyCode == 13){  
+
+                    bt.click();  
+
+                    return false;  
+
+              }  
+
+          }  
+
+        } 
+
+    </script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainRight" runat="server">
     <div id="search" style="width:100%;height:50px">
-          <asp:TextBox ID="txtTim" Width="30%" runat="server"></asp:TextBox>
+          <asp:TextBox ID="txtTim" Width="30%" runat="server" placeholder="Nhập vào tên tour"></asp:TextBox>
           <asp:Button ID="btnTim" style="line-height:50px;margin-top:10px" runat="server" Text="Tìm"  PostBackUrl='<%#"~/Admin/Tour.aspx?TourName="+txtTim.Text %>'  />  
           <asp:Image ID="Image2" runat="server" ImageUrl="~/Admin/Image/Icon/icons8-add-50.png" />
           <asp:Button ID="Button1" runat="server" Text="ADD TOUR" PostBackUrl="~/Admin/AddForeignTour.aspx" />
@@ -40,7 +69,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Mô tả">
                     <ItemTemplate>
-                        <asp:Label Width="500px" ID="Label1" runat="server" Text='<%#Eval("TourDescription") %>'></asp:Label>
+                        <asp:Label Width="300px" ID="Label1" runat="server" Text='<%#Eval("TourDescription") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Giá">
