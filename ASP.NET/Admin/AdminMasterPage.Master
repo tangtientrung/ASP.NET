@@ -46,6 +46,7 @@
                                             <ul>
                                                 <li><a href="Tour.aspx">TOUR TRONG NƯỚC</a></li>
                                                 <li><a href="ForeignTour.aspx">TOUR NƯỚC NGOÀI</a></li>
+                                                <li><a href="HotTour.aspx">HOT TOUR</a></li>
                                             </ul>
                                     </li>
                                     
@@ -57,8 +58,9 @@
                                             ORDER</a>
                                         
                                         <ul>
-                                        <li><a href="../admin/show_dt.php">QUẢN LÍ</a></li>
-                                        <li><a href="../admin/show_laptop.php">HOT TOUR</a></li>
+                                        <li><a href="AnalysisOrder.aspx">PHÂN TÍCH</a></li>
+                                        <li><a href="ManageOrder.aspx">QUẢN LÍ</a></li>
+                                         
                                         </ul>
                                     </li>
         

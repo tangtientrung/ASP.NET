@@ -17,9 +17,10 @@ namespace ASP.NET.Admin
             if(!IsPostBack)
             {
                 ddlCountry.DataSource=countryBUS.SelectAllCountry();
-                ddlCountry.DataBind();
+                
                 ddlCountry.DataTextField = "CountryName";
                 ddlCountry.DataValueField = "CountryId";
+                ddlCountry.DataBind();
             }
         }
         PlaceBUS placeBus = new PlaceBUS();

@@ -34,6 +34,7 @@ namespace ASP.NET.Admin
                 grvOrder.DataSource = orderBUS.GetAllDisableOrder();
                 grvOrder.DataBind();
             }
+             
         }
     }
 }

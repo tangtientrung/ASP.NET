@@ -30,15 +30,15 @@ namespace BUS
         public DataTable HotTour()
         {
             
-            string sql= " select top 3 tourID ,count(tourID) as sl from Orders group by tourID order by tourId asc" ;
+            string sql= " select * from Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId where Tour.TourId In (select top 2 tourID  from Orders group by tourID order by tourId asc)";
             return orderDal.GetTable(sql);
         }
         public DataTable AnalysisOrder(DateTime bd,DateTime kt)
         {
-            string sql = "Select UserName,TourName,DateOrder,Orders.Status From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where DateOrder between '"+bd+"' and '"+kt+ "' Orders.Status=1";
+            string sql = "Select UserName,TourName,DateOrder,Orders.Status From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where DateOrder between '"+bd+"' and '"+kt+ "' and Orders.Status=1";
             return orderDal.GetTable(sql);
         }
-        public DataTable TotalMoney(DateTime bd, DateTime kt)
+        public DataTable TotalMoney(DateTime bd, DateTime kt) 
         {
             string sql = "select sum(TourPrice) AS 'Tong' From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where DateOrder between '" + bd + "' and '" + kt + "' and Orders.Status=1 ";
             return orderDal.GetTable(sql);

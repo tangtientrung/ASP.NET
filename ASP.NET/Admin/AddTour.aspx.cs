@@ -97,6 +97,7 @@ namespace ASP.NET.Admin
                     );
                 Save();
                 tourBus.InsertTour(tour1);
+                Response.Write("<script>alert('Thành công!')</script>");
             }
             else
             {
@@ -122,6 +123,7 @@ namespace ASP.NET.Admin
                     txtSchedule.Text,
                     ddlPlace.SelectedValue,
                     status);
+                Response.Write("<script>alert('Thành công!')</script>");
             }
         }
     }

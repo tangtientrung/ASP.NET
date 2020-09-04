@@ -67,10 +67,8 @@
         </table>
         <asp:Button ID="btnThem" runat="server" Text="Lưu" style="margin-left:150px" OnClick="btnThem_Click"   />
     
-            <asp:SqlDataSource ID="SelectAllForeignTour" runat="server" ConnectionString="<%$ ConnectionStrings:SelectAllForeignPlace %>" SelectCommand="SELECT * FROM [Place] WHERE ([CountryId] NOT LIKE '%' + @CountryId + '%')">
-                <SelectParameters>
-                    <asp:Parameter DefaultValue="__VN" Name="CountryId" Type="String" />
-                </SelectParameters>
+            <asp:SqlDataSource ID="SelectAllForeignTour" runat="server" ConnectionString="<%$ ConnectionStrings:SelectAllForeignPlace %>" SelectCommand="SELECT * FROM [Place] WHERE ([CountryId] ='N02')">
+                
     </asp:SqlDataSource>
         <br />
     

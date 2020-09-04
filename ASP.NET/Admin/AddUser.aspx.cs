@@ -193,19 +193,10 @@ namespace ASP.NET.Admin
                 string address = txtAddress.Text;
                 string roleId = ddlRole.SelectedValue;
 
-                bool check = true;
-                if(Check(txtUserName))
-                {
-                    Response.Write("a");
-                } 
-                else
-                {
-                    lbUserName.Text = "Bạn phải nhập họ tên";
-                    check = false;
-                }    
-                /*UserDTO user = new UserDTO(userName, email, pass, phone, address, roleId);
-                usBUS.InsertUser(user);*/
-
+                 
+                UserDTO user = new UserDTO(userName, email, pass, phone, address, roleId);
+                usBUS.InsertUser(user);
+                Response.Write("<script>alert('Thành công!')</script>");
             }
             else
             {
@@ -221,6 +212,7 @@ namespace ASP.NET.Admin
                 usBUS.UpdateUser(userName, email, pass, phone, address, roleId, userId);
                 Response.Redirect("Account.aspx");
                 //Response.Write(""+ userName);
+                Response.Write("<script>alert('Thành công!')</script>");
             }
         }
 

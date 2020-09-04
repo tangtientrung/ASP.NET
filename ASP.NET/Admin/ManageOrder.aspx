@@ -31,8 +31,11 @@
                     <asp:Label runat="server" Text='<%# Eval("Status") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
+            
         </Columns>
     </asp:GridView>
+    
+    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
 </asp:Content>
 
 
