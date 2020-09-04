@@ -4,14 +4,14 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainRight" runat="server">
     <div id="search" style="width:100%;height:50px">
-          <asp:TextBox ID="txtTim" Width="30%" runat="server"></asp:TextBox>
+          <asp:TextBox ID="txtTim" Width="30%" placeholder="Nhập vào tên tour" runat="server"></asp:TextBox>
           <asp:Button ID="btnTim" style="line-height:50px;margin-top:10px" runat="server" Text="Tìm"  PostBackUrl='<%#"~/Admin/Tour.aspx?TourName="+txtTim.Text %>'  />  
           <asp:Image ID="Image2" runat="server" ImageUrl="~/Admin/Image/Icon/icons8-add-50.png" />
           <asp:Button ID="Button1" runat="server" Text="ADD TOUR" PostBackUrl="~/Admin/AddTour.aspx" />
 
     </div>
     <div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+        
         <asp:GridView ID="grvTour" runat="server" AutoGenerateColumns="False" Width="100%">
             <Columns>
                 <asp:TemplateField HeaderText="Sửa">

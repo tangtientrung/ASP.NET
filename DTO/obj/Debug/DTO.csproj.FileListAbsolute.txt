@@ -9,3 +9,9 @@ C:\Users\ASUS\Desktop\ASP\ASP.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cac
 C:\Users\ASUS\Desktop\ASP\ASP.NET\DTO\obj\Debug\DTO.dll
 C:\Users\ASUS\Desktop\ASP\ASP.NET\DTO\obj\Debug\DTO.pdb
 C:\Users\ASUS\Desktop\ASP\ASP.NET\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\DTO\bin\Debug\DTO.dll
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\DTO\bin\Debug\DTO.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\DTO\obj\Debug\DTO.dll
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\DTO\obj\Debug\DTO.pdb

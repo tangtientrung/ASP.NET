@@ -38,31 +38,35 @@
                                 <ul class="ulmain">
                                     
                                     <li>
-                                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Admin/Image/Icon/icons8-tour-bus-40.png" Height="30px" Width="30px"/>
-                                        <a href="#" style="margin-left:5px">TOUR                    
+                                        
+                                        <a href="#" style="margin-left:5px">
+                                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Admin/Image/Icon/icons8-tour-bus-40.png" Height="30px" Width="30px"/>
+                                            TOUR                    
                                             
                                             <ul>
                                                 <li><a href="Tour.aspx">TOUR TRONG NƯỚC</a></li>
                                                 <li><a href="ForeignTour.aspx">TOUR NƯỚC NGOÀI</a></li>
-                                                <li><a href="AddPlace.aspx">THÊM ĐỊA ĐIỂM TRONG NƯỚC</a></li>
-                                                <li><a href="AddForeginPlace.aspx">THÊM ĐỊA ĐIỂM NƯỚC NGOÀI</a></li>
                                             </ul>
                                     </li>
                                     
                                     <li>
-                                        <asp:Image ID="Image3" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-purchase-order-30.png"/>
                                         
-                                        <a href="#" style="margin-left:5px">ORDER</a>
+                                        
+                                        <a href="#" style="margin-left:5px">
+                                            <asp:Image ID="Image3" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-purchase-order-30.png"/>
+                                            ORDER</a>
                                         
                                         <ul>
-                                        <li><a href="">QUẢN LÍ</a></li>
-                                        <li><a href="">HOT TOUR</a></li>
+                                        <li><a href="../admin/show_dt.php">QUẢN LÍ</a></li>
+                                        <li><a href="../admin/show_laptop.php">HOT TOUR</a></li>
                                         </ul>
                                     </li>
         
                                     <li>
-                                        <asp:Image ID="Image2" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-account-30.png"/>
-                                        <a href="#" style="margin-left:5px">TÀI KHOẢN</a>
+                                       
+                                        <a href="#" style="margin-left:5px">
+                                             <asp:Image ID="Image2" runat="server"  ImageUrl="~/Admin/Image/Icon/icons8-account-30.png"/>
+                                            TÀI KHOẢN</a>
                                         <ul>
                                             <li><a href="Account.aspx">QUẢN LÍ</a></li>
                                             <li><a href="AddUser.aspx">THÊM TÀI KHOẢN</a></li>

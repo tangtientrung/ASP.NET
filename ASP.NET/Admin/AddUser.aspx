@@ -13,12 +13,28 @@
         
         <table cellpadding="0" cellspacing="0" class="auto-style1">
             <tr>
-                <td style="width: 20%"><asp:Label ID="Label1" runat="server" Text="Tên khách hàng:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
-                <td><asp:TextBox ID="txtUserName" runat="server" Width="100%"></asp:TextBox></td>
+                <td style="width: 20%"><asp:Label ID="Label1" runat="server" Text="Tên khách hàng: *" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
+                <td><asp:TextBox ID="txtUserName" runat="server" Width="100%" ></asp:TextBox></td>
             </tr>
             <tr>
-                <td style="width: 20%"><asp:Label ID="Label2" runat="server" Text="Email:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
+                <td></td>
+                <td><asp:Label ID="lbUserName" runat="server" ForeColor="Red" ></asp:Label></td>
+            </tr>
+            <tr>
+                <td style="width: 20%"><asp:Label ID="Label2" runat="server" Text="Email: *" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
                 <td><asp:TextBox ID="txtEmail" runat="server" Width="100%"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><asp:Label ID="lbEmail" runat="server" ForeColor="Red" ></asp:Label></td>
+            </tr>
+            <tr>
+                <td style="width: 20%"><asp:Label ID="Label7" runat="server" Text="Password: *" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
+                <td><asp:TextBox ID="txtPass" runat="server" Width="100%"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><asp:Label ID="lbPassword" runat="server" ForeColor="Red" ></asp:Label></td>
             </tr>
             <tr>
                 <td style="width: 20%"><asp:Label ID="Label3" runat="server" Text="Số điện thoại:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
@@ -30,23 +46,14 @@
             </tr>
             <tr>
                 <td style="width: 20%"><asp:Label ID="Label5" runat="server" Text="Quyền:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
-                <td><asp:DropDownList ID="ddlRole" runat="server" DataSourceID="SqlDataSource1" DataTextField="RoleName" DataValueField="RoleId"></asp:DropDownList></td>      
-            </tr>
-            <tr>
-                <td style="width: 20%"><asp:Label ID="Label6" runat="server" Text="Trạng thái:" ForeColor="Red" Width="100%" ></asp:Label><br /></td>
-                <td><asp:RadioButtonList ID="rbStatus" runat="server">
-                        <asp:ListItem >Enable</asp:ListItem>
-                        <asp:ListItem>Disable</asp:ListItem>
-                    </asp:RadioButtonList></td>
-            </tr>
-            
+                <td><asp:DropDownList ID="ddlRole" runat="server" >
+                    <asp:ListItem>Admin</asp:ListItem>
+                    <asp:ListItem>User</asp:ListItem>
+                    </asp:DropDownList></td>      
+            </tr>     
         </table>
         <asp:Button ID="btnThem" runat="server" Text="Lưu" style="margin-left:150px" OnClick="btnThem_Click"  />
         <br />
-       
-        
-
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SelectAllRole %>" SelectCommand="SELECT * FROM [Role]"></asp:SqlDataSource>
     </div>
     
 </asp:Content>

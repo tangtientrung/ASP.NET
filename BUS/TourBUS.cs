@@ -14,22 +14,22 @@ namespace BUS
         TourDAL tourDAL = new TourDAL();
         public DataTable GetAllTour()
         {
-            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId like '__VN'";
+            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId ='N01'";
             return tourDAL.GetTable(sql);
         }
         public DataTable GetAllForeignTour()
         {
-            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId not like '__VN'";
+            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId = 'N02'";
             return tourDAL.GetTable(sql);
         }
         public DataTable SearchTour(string name)
         {
-            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId Like '__VN' And TourName='" + name + "'";
+            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId = 'N01' And TourName='" + name + "'";
             return tourDAL.GetTable(sql);
         }
         public DataTable SearchForeignTour(string name)
         {
-            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId Not Like '__VN' And TourName='" + name + "'";
+            string sql = "Select * From Tour join Place on Place.PlaceId=Tour.PlaceId join Country on Country.CountryId=Place.CountryId Where Country.CountryId = 'N02' And TourName='" + name + "'";
             return tourDAL.GetTable(sql);
         }
         public void InsertTour(TourDTO tour)

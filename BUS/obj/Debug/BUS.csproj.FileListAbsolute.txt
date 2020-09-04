@@ -18,3 +18,14 @@ C:\Users\ASUS\Desktop\ASP\ASP.NET\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cac
 C:\Users\ASUS\Desktop\ASP\ASP.NET\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ASP\ASP.NET\BUS\obj\Debug\BUS.dll
 C:\Users\ASUS\Desktop\ASP\ASP.NET\BUS\obj\Debug\BUS.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\bin\Debug\BUS.dll
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\bin\Debug\BUS.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\bin\Debug\DAL.dll
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\bin\Debug\DTO.dll
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\bin\Debug\DAL.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\bin\Debug\DTO.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.dll
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.pdb
+C:\Users\ASUS\Desktop\ASPNET\ASP.NET\BUS\obj\Debug\BUS.csprojAssemblyReference.cache

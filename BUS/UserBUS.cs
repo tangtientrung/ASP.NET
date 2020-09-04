@@ -17,24 +17,29 @@ namespace BUS
             string sql = "Select * From Users";
             return usDAL.GetTable(sql);
         }
+        public DataTable Login(string email,string pass)
+        {
+            string sql = "Select * From Users Where Email='"+email+"' and Pass = '"+pass+"'";
+            return usDAL.GetTable(sql);
+        }
         public void UpdateUser(string userName, string email,string pass, string phone, string address, string roleId, int userId)
         {
-            string sql = "Update Users set UserName=N'" + userName + "' ,Email=N'" + email + "' , Pass=N'" + pass + "', Address=N'" + address + "' ,Phone=N'" + phone + "' ,RoleId='" + roleId + "'  Where UserId="+userId+"";
+            string sql = "Update Users set UserName=N'" + userName + "' ,Email=N'" + email + "' , Pass=N'" + pass + "', Address=N'" + address + "' ,Phone=N'" + phone + "' ,Role='" + roleId + "'  Where UserId="+userId+"";
             usDAL.ExcuteNonQuery(sql);
         }
         public DataTable GetUser(int Id)
         {
-            string sql = "Select * From Users UserId='" + Id + "'";
+            string sql = "Select * From Users Where UserId=" + Id + "";
             return usDAL.GetTable(sql);
         }
         public void InsertUser(UserDTO user)
         {
-            string sql = "Insert into Users Values (N'" + user.UserName + "',N'" + user.Email + "',N'" + user.Pass + "',N'" + user.Phone + "',N'" + user.Address + "'," + user.RoleId + ",N')";
+            string sql = "Insert into Users Values (N'" + user.UserName + "',N'" + user.Email + "',N'" + user.Pass + "',N'" + user.Phone + "',N'" + user.Address + "','" + user.RoleId + "')";
             usDAL.ExcuteNonQuery(sql);   
         }
         public DataTable SearchUser(string name)
         {
-            string sql = "Select * From Users join Role" + name + "'";
+            string sql = "Select * From Users Where UserName like '%" + name + "%'";
             return usDAL.GetTable(sql);
         }
         public void DeleteUser(int id)

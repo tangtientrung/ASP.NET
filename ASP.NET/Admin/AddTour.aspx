@@ -67,9 +67,9 @@
         </table>
         <asp:Button ID="btnThem" runat="server" Text="Lưu" style="margin-left:150px" OnClick="btnThem_Click"   />
     
-        <asp:SqlDataSource ID="SelectAllPlace" runat="server" ConnectionString="<%$ ConnectionStrings:SelectAllPlace %>" SelectCommand="SELECT * FROM [Place] WHERE ([CountryId] LIKE '%' + @CountryId + '%')">
+        <asp:SqlDataSource ID="SelectAllPlace" runat="server" ConnectionString="<%$ ConnectionStrings:SelectAllPlace %>" SelectCommand="SELECT * FROM [Place] WHERE ([CountryId] = @CountryId)">
             <SelectParameters>
-                <asp:Parameter DefaultValue="__VN" Name="CountryId" Type="String" />
+                <asp:Parameter DefaultValue="N01" Name="CountryId" Type="String" />
             </SelectParameters>
     </asp:SqlDataSource>
         <br />

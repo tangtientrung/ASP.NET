@@ -1,5 +1,6 @@
 ﻿body {
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +15,18 @@ body {
     font-family: inherit;
     margin: 0px auto;
 }
-#top{
-    width:100%;
-    height:100px;
+
+#top {
+    width: 100%;
+    height: 100px;
 }
-#top #search input[type=submit] {
-    width: 100px;
-    height: 39px;
-    margin: 5px 0px 5px 0px;
-    float: left;
-}
+
+    #top #search input[type=submit] {
+        width: 100px;
+        height: 39px;
+        margin: 5px 0px 5px 0px;
+        float: left;
+    }
 
 #account {
     width: 150px;
@@ -45,6 +48,7 @@ body {
 #wrapper #top #account p {
     line-height: 50px;
 }
+
 .top {
     float: left;
     width: 100%;
@@ -60,29 +64,30 @@ body {
 
 .main {
     width: 100%;
-    border:1px;
+    border: 1px;
 }
 
-     .main .left {
+    .main .left {
         width: 20%;
         height: 500px;
         float: left;
-        background-color:#2c2a2a;
-        color:#ffffff;
+        background-color: #2c2a2a;
+        color: #ffffff;
     }
 
-     .main .right {
+    .main .right {
         width: 75%;
         float: left;
-        margin-left:10px;
-        
-        background-color:blanchedalmond;
+        margin-left: 10px;
+        background-color: blanchedalmond;
     }
+
     .main .left ul.ulmain img:active ul {
         display: block;
         margin-left: 10px;
         margin-top: 10px;
     }
+
     .main .left ul.ulmain li a {
         text-decoration: none;
         color: #ffffff;
@@ -94,7 +99,7 @@ body {
         margin-left: 30px;
         margin-top: 15px;
         width: 100%;
-        height:30px;
+        height: 30px;
     }
 
         .main .left ul.ulmain li ul {
@@ -105,20 +110,22 @@ body {
         .main .left ul.ulmain li:hover ul {
             display: block;
             margin-left: 10px;
-            margin-top:10px;
-            
+            margin-top: 10px;
         }
+
             .main .left ul.ulmain li:hover ul li a {
                 color: #fb2424;
             }
-            .clear {
-                clear: both;
-            }
+
+.clear {
+    clear: both;
+}
+
 .footer {
     width: 100%;
-    height:50px;
+    height: 50px;
     background-color: rgb(2, 1, 24);
-    line-height:50px;
-    color:#ffffff;
-    text-align:center;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
 }

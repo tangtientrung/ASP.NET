@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainRight" runat="server">
                      
                      <div id="search" style="width:100%;height:50px">
-                                <asp:TextBox ID="txtTim" Width="30%" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtTim" Width="30%" runat="server" placeholder="Nhập vào tên khách hàng"></asp:TextBox>
                                         
 
                      </div>
@@ -28,6 +28,12 @@
                     <asp:Label runat="server" Text='<%# Eval("Email") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="Pass">
+                <ItemTemplate>
+                    <asp:Label runat="server" Text='<%# Eval("Pass") %>'></asp:Label>
+                    
+                </ItemTemplate>
+            </asp:TemplateField>
             <asp:TemplateField HeaderText="Phone">
                 <ItemTemplate>
                     <asp:Label runat="server" Text='<%# Eval("Phone") %>'></asp:Label>
@@ -40,15 +46,10 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Role Name">
                 <ItemTemplate>
-                    <asp:Label runat="server" Text='<%# Eval("RoleName") %>'></asp:Label>
+                    <asp:Label runat="server" Text='<%# Eval("Role") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Status">
-                <ItemTemplate>
-                    <asp:Label runat="server" Text='<%# Eval("Status") %>'></asp:Label>
-                    
-                </ItemTemplate>
-            </asp:TemplateField>
+            
            
             <asp:TemplateField HeaderText="Sửa">
                 <ItemTemplate>

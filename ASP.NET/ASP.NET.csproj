@@ -82,8 +82,30 @@
     <Content Include="Admin\AddPlace.aspx" />
     <Content Include="Admin\AddTour.aspx" />
     <Content Include="Admin\AddUser.aspx" />
+    <Content Include="Admin\AnalysisOrder.aspx" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui - Copy.js" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\LICENSE.txt" />
     <Content Include="Admin\Css\Style.css" />
+    <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\ForeignTour.aspx" />
+    <Content Include="Admin\HotTour.aspx" />
     <Content Include="Admin\Image\Icon\icons8-account-30.png" />
     <Content Include="Admin\Image\Icon\icons8-add-50.png" />
     <Content Include="Admin\Image\Icon\icons8-admin-settings-male-30.png" />
@@ -91,12 +113,16 @@
     <Content Include="Admin\Image\Icon\icons8-drop-down-24.png" />
     <Content Include="Admin\Image\Icon\icons8-purchase-order-30.png" />
     <Content Include="Admin\Image\Icon\icons8-tour-bus-40.png" />
+    <Content Include="Admin\ManageOrder.aspx" />
     <Content Include="Admin\Order.aspx" />
     <Content Include="Admin\Tour.aspx" />
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="HomePage\Chitiettour.aspx" />
     <Content Include="HomePage\CSS\StyleHome.css" />
     <Content Include="HomePage\Giohang.aspx" />
     <Content Include="HomePage\Home1.aspx" />
+    <Content Include="HomePage\Login.aspx" />
     <Content Include="HomePage\WebForm1.aspx" />
     <Content Include="Image\Home\demthienglieng.jpg" />
     <Content Include="Image\Home\envelope.png" />
@@ -130,7 +156,6 @@
     <Content Include="Image\Tour1\t20.jfif" />
     <Content Include="Image\Tour1\thai.png" />
     <Content Include="Image\Tour1\y.png" />
-    <Content Include="Image\Tour\1.jpg" />
     <Content Include="Image\Tour\2.jpg" />
     <Content Include="Image\Tour\f2 %281%29.jpg" />
     <Content Include="Image\Tour\f2 %282%29.jpg" />
@@ -147,6 +172,13 @@
     <Content Include="Image\Tour\l7.jpg" />
     <Content Include="Image\Tour\l8.jpg" />
     <Content Include="Image\Tour\l9.jpg" />
+    <Content Include="Login\css\font-awesome.css" />
+    <Content Include="Login\css\style.css" />
+    <Content Include="Login\fonts\fontawesome-webfont.svg" />
+    <Content Include="Login\images\bg2.jpeg" />
+    <Content Include="Login\index.html" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\w3layouts-License.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -199,12 +231,40 @@
     <Compile Include="Admin\AdminMasterPage.Master.designer.cs">
       <DependentUpon>AdminMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AnalysisOrder.aspx.cs">
+      <DependentUpon>AnalysisOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AnalysisOrder.aspx.designer.cs">
+      <DependentUpon>AnalysisOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ForeignTour.aspx.cs">
       <DependentUpon>ForeignTour.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\ForeignTour.aspx.designer.cs">
       <DependentUpon>ForeignTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\HotTour.aspx.cs">
+      <DependentUpon>HotTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\HotTour.aspx.designer.cs">
+      <DependentUpon>HotTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageOrder.aspx.cs">
+      <DependentUpon>ManageOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageOrder.aspx.designer.cs">
+      <DependentUpon>ManageOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
@@ -219,6 +279,16 @@
     </Compile>
     <Compile Include="Admin\Tour.aspx.designer.cs">
       <DependentUpon>Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HomePage\Chitiettour.aspx.cs">
       <DependentUpon>Chitiettour.aspx</DependentUpon>
@@ -241,6 +311,13 @@
     <Compile Include="HomePage\Home1.aspx.designer.cs">
       <DependentUpon>Home1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HomePage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,11 +332,24 @@
     <Compile Include="HomePage\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AdminMasterPage.Master" />
     <Content Include="HomePage\Main.Master" />
+    <Content Include="Login\fonts\fontawesome-webfont.eot" />
+    <Content Include="Login\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Login\fonts\fontawesome-webfont.woff" />
+    <Content Include="Login\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Login\fonts\FontAwesome.otf" />
+    <Content Include="Admin\Css\jquery-ui-1.12.1.custom\package.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

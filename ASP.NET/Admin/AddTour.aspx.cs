@@ -59,7 +59,15 @@ namespace ASP.NET.Admin
                 }
             }
         }
-
+        public void Save()
+        {
+            string strFilePath;
+            if(fileUploadAnh.FileName!="")
+            {
+                strFilePath = Server.MapPath(@"../Image/Tour1/" + fileUploadAnh.FileName);
+                fileUploadAnh.PostedFile.SaveAs(strFilePath);
+            }
+        }
         protected void btnThem_Click(object sender, EventArgs e)
         {
             if(tourId=="")
@@ -75,7 +83,7 @@ namespace ASP.NET.Admin
                 }
                 TourDTO tour1 = new TourDTO(
                     txtId.Text,
-                    "~Image/Tour/"+fileUploadAnh.FileName,
+                    "~/Image/Tour1/"+fileUploadAnh.FileName,
                     txtName.Text,
                     txtDescription.Text,
                     double.Parse(txtPrice.Text),
@@ -87,6 +95,7 @@ namespace ASP.NET.Admin
                     ddlPlace.SelectedValue,
                     status
                     );
+                Save();
                 tourBus.InsertTour(tour1);
             }
             else
@@ -100,9 +109,9 @@ namespace ASP.NET.Admin
                 {
                     status = "false";
                 }
-                
+                Save();
                 tourBus.UpdateTour(txtId.Text,
-                    "~Image/Tour/" + fileUploadAnh.FileName,
+                    "~/Image/Tour1/" + fileUploadAnh.FileName,
                     txtName.Text,
                     txtDescription.Text,
                     double.Parse(txtPrice.Text),

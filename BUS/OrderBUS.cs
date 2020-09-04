@@ -14,12 +14,38 @@ namespace BUS
         OrderDAL orderDal = new OrderDAL();
         public DataTable GetAllOrder()
         {
-            string sql = "Select * From Orders";
+            string sql = "Select UserName,TourName,DateOrder,Orders.Status From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId";
             return orderDal.GetTable(sql);
         }
-        public void UpdateOrder(int userId,  string tourId)
+        public DataTable GetAllEnabelOrder()
         {
-            string sql = "Update Orders set UserId=" + userId + " ,TourId=N'" + tourId + "' Where UserId="+userId+" And TourId='"+tourId+"'";
+            string sql = "Select UserName,TourName,DateOrder,Orders.Status From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where Orders.status =1";
+            return orderDal.GetTable(sql);
+        }
+        public DataTable GetAllDisableOrder()
+        {
+            string sql = "Select UserName,TourName,DateOrder,Orders.Status From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where Orders.status =0";
+            return orderDal.GetTable(sql);
+        }
+        public DataTable HotTour()
+        {
+            
+            string sql= " select top 3 tourID ,count(tourID) as sl from Orders group by tourID order by tourId asc" ;
+            return orderDal.GetTable(sql);
+        }
+        public DataTable AnalysisOrder(DateTime bd,DateTime kt)
+        {
+            string sql = "Select UserName,TourName,DateOrder,Orders.Status From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where DateOrder between '"+bd+"' and '"+kt+ "' Orders.Status=1";
+            return orderDal.GetTable(sql);
+        }
+        public DataTable TotalMoney(DateTime bd, DateTime kt)
+        {
+            string sql = "select sum(TourPrice) AS 'Tong' From Orders join Users on Orders.UserId=Users.UserId join Tour on Tour.TourId=Orders.TourId where DateOrder between '" + bd + "' and '" + kt + "' and Orders.Status=1 ";
+            return orderDal.GetTable(sql);
+        }
+        public void UpdateOrder(int userId,  string tourId,string status)
+        {
+            string sql = "Update Orders set UserId=" + userId + " ,TourId=N'" + tourId + "', ,Status=N'" + status + "' Where UserId=" + userId+" And TourId='"+tourId+"'";
             orderDal.ExcuteNonQuery(sql);
         }
         
