@@ -53,11 +53,11 @@ go
 
 create Table Orders
 (
-	UserId int default 0,
-	TourId char(10) default 0,
+	UserId int ,
+	TourId char(10) ,
 	constraint pk_Order Primary  key(UserId,TourId) ,
-	constraint fk_Order_User foreign key(UserId) references Users(UserId) ON DELETE SET Default ,
-	constraint fk_Order_Tour foreign key(TourId) references Tour(TourId) ON DELETE SET default,
+	constraint fk_Order_User foreign key(UserId) references Users(UserId) ON DELETE CASCADE ,
+	constraint fk_Order_Tour foreign key(TourId) references Tour(TourId) ON DELETE CASCADE,
 	DateOrder datetime default GetDate(),
 	status bit default 0,
 )
