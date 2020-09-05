@@ -14,7 +14,15 @@ namespace ASP.NET.Admin
         UserBUS userBUS = new UserBUS();
         protected void Page_Load(object sender, EventArgs e)
         {
-            int id = int.Parse(Session["Id"].ToString());
+            int id = 0;
+            try
+            {
+                id = int.Parse(Session["Id"].ToString());
+            }
+            catch
+            {
+                ///Response.Write("<script>alert('')</script>");
+            }
             string name = "";
             foreach (DataRow row in userBUS.GetUser(id).Rows)
             {
@@ -26,6 +34,7 @@ namespace ASP.NET.Admin
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Response.Redirect("../Login/Login.aspx");
+            Session["Id"] = 0;
         }
         
     }
